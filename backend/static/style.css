@@ -1,0 +1,98 @@
+:root {
+  --bg: #1e1e1e;
+  --panel: #252526;
+  --text: #e5e7eb;
+  --accent: #007acc;
+  --border: #3a3a3a;
+  --output-bg: #0b0b0b;
+  --output-text: #d1fae5;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.site-header {
+  padding: 14px 18px;
+  background: #111;
+  border-bottom: 1px solid var(--border);
+}
+.site-header h1 {
+  margin: 0;
+  text-align: center;
+  color: #facc15;
+  letter-spacing: .5px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 20px auto 60px;
+  padding: 0 16px 24px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 12px;
+}
+
+#language {
+  background: #2d2d2d;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+/* Editor shell (CodeMirror injected inside) */
+#editor {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--panel);
+}
+
+/* CodeMirror look (VS Code-ish with Dracula theme) */
+.CodeMirror {
+  height: 420px;
+  font-size: 15px;
+  line-height: 1.45;
+}
+.cm-s-dracula.CodeMirror { background: #0f0f13; color: #f8f8f2; }
+.cm-s-dracula .CodeMirror-gutters { background: #0f0f13; border-right: 1px solid #2a2a34; }
+.cm-s-dracula .CodeMirror-linenumber { color: #6b7280; }
+
+/* Button */
+.btn {
+  margin: 14px 0 18px;
+  width: 100%;
+  padding: 12px 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  transition: filter .15s ease;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn:active { filter: brightness(0.96); }
+
+/* Output */
+.output-wrap h2 { margin: 0 0 8px; }
+#output {
+  background: var(--output-bg);
+  color: var(--output-text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-height: 140px;
+  padding: 14px;
+  white-space: pre-wrap;
+}
