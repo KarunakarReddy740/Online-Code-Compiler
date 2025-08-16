@@ -1,2 +1,14 @@
-# Online-Code-Compiler
-✅ Python Functions  Factorial calculation using recursion  Fibonacci series generation  ✅ JavaScript Functions  Factorial calculation  Fibonacci series generation  ✅ Clean HTML/CSS UI for editor  ✅ Flask backend (Python) for running Python code  ✅ Node.js backend (JavaScript) for running JS cod
+# 🖥️ Online Code Runner (Python & JavaScript)
+
+This project is a simple **code testing playground** where you can run basic programs in **Python** and **JavaScript**.  
+It is designed to check if your environment is correctly set up for running both languages.
+
+---
+
+## 🚀 Features
+- ✅ Run Python test functions (like Fibonacci, factorial, etc.)
+- ✅ Run JavaScript test functions in Node.js
+- ✅ Beginner-friendly project structure
+- ✅ Helps verify environment setup (Python + Node.js)
+
+
